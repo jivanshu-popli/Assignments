@@ -1,0 +1,14 @@
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/bin/Debug/net8.0/Assignment1Dotnet
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/bin/Debug/net8.0/Assignment1Dotnet.deps.json
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/bin/Debug/net8.0/Assignment1Dotnet.runtimeconfig.json
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/bin/Debug/net8.0/Assignment1Dotnet.dll
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/bin/Debug/net8.0/Assignment1Dotnet.pdb
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/Assignment1Dotnet.GeneratedMSBuildEditorConfig.editorconfig
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/Assignment1Dotnet.AssemblyInfoInputs.cache
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/Assignment1Dotnet.AssemblyInfo.cs
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/Assignment1Dotnet.csproj.CoreCompileInputs.cache
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/Assignment1Dotnet.dll
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/refint/Assignment1Dotnet.dll
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/Assignment1Dotnet.pdb
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/Assignment1Dotnet.genruntimeconfig.cache
+/Users/jivanshupopli/dotnetapps/Assignment1Dotnet/obj/Debug/net8.0/ref/Assignment1Dotnet.dll
