@@ -1,0 +1,49 @@
+@model IEnumerable<flightproject2.Model.AdminCustomersJivanshu>
+
+@{
+    ViewData["Title"] = "AllCustomers";
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>All Customers</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerName)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.CustomerLocation)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.EmailAddress)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.CustomerLocation)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailAddress)
+            </td>
+            <td>
+                @Html.ActionLink("Delete Customer", "DeleteCustomer", new {  id=item.CustomerId  })
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

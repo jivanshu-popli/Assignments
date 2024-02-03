@@ -1,0 +1,37 @@
+
+@model flightproject2.Models.FlightsJivanshu
+
+@{
+    ViewData["Title"] = "Search";
+}
+<div class = "searchpage">
+<h1>Search For Flights</h1>
+<hr />
+
+    <div class="col-md-4">
+        <form asp-action="Search">
+            <div asp-validation-summary="ModelOnly" class="text-danger"></div>
+            
+            <div class="form-group">
+                <label asp-for="SourceCity" class="control-label"></label>
+                @* <input asp-for="SourceCity" class="form-control" /> *@
+                <select asp-for="SourceCity" class="form-control" asp-items="@ViewBag.SourceCitys"></select>
+                <span asp-validation-for="SourceCity" class="text-danger"></span>
+            </div>
+            <div class="form-group">
+                <label asp-for="DestinationCity" class="control-label"></label>
+                <select asp-for="DestinationCity" class="form-control" asp-items="@ViewBag.dest"></select>
+                <span asp-validation-for="DestinationCity" class="text-danger"></span>
+            </div>
+            
+            <div class="form-group">
+                <input type="submit" value="Search Flight" class="btn btn-primary" />
+            </div>
+        </form>
+    </div>
+</div>
+
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}
+

@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\flightproject2.props" />
+</Project>

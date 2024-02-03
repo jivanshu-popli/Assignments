@@ -1,0 +1,61 @@
+@model IEnumerable<flightproject2.Models.BookingsJivanshu> 
+
+@{
+    ViewData["Title"] = "AllBookings";
+    Layout="~/Views/Shared/_AllFlightsLayout.cshtml";
+}
+
+<h1>Hello!</h1>
+<h2>All Your Bookings</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FlightId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flight.Airline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flight.SourceCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Flight.DestinationCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.NoOfPassengers)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.TotalCost)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlightId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight.Airline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight.SourceCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Flight.DestinationCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.NoOfPassengers)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.TotalCost)
+            </td>
+            <td>
+                @Html.ActionLink("Details", "Details", new { id=item.BookingId }) 
+            </td>
+        </tr>
+}
+    </tbody>
+</table>

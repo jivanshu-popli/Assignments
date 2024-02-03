@@ -1,0 +1,52 @@
+@model IEnumerable<flightproject2.Model.AdminFlightsJivanshu>
+
+@{
+    ViewData["Title"] = "FlightDetails";
+    Layout="~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1>Flight Details</h1>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.FlightId)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Airline)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.SourceCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.DestinationCity)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.Price)
+            </th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+@foreach (var item in Model) {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.FlightId)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Airline)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.SourceCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.DestinationCity)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Price)
+            </td>
+        </tr>
+}
+    </tbody>
+</table>
